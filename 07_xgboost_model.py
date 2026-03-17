@@ -33,7 +33,7 @@ print("Train-test split done")
 print("X_train:", X_train.shape)
 print("X_test:", X_test.shape)
 
-# 4. 🔥 FIX: clean column names for XGBoost
+# 4.  FIX: clean column names for XGBoost
 X_train.columns = X_train.columns.str.replace(r"[\\[\\]<]", "_", regex=True)
 X_test.columns = X_test.columns.str.replace(r"[\\[\\]<]", "_", regex=True)
 
